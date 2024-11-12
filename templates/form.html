@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prédiction du Cluster de Vin</title>
+    <!-- Inclure Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Prédiction du Cluster de Vin</h1>
+      {% if error %}
+      <div class="alert alert-danger" role="alert">{{ error }}</div>
+      {% endif %}
+      <form method="post">
+        <div class="form-row">
+          {% for column in expected_columns %}
+          <div class="form-group col-md-6">
+            <label for="{{ column }}">{{ column.replace('_', ' ') }}</label>
+            <input
+              type="number"
+              step="any"
+              class="form-control"
+              id="{{ column }}"
+              name="{{ column }}"
+              required
+            />
+          </div>
+          {% endfor %}
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Prédire</button>
+      </form>
+    </div>
+    <!-- Inclure jQuery et Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
