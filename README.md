@@ -98,36 +98,31 @@ The project includes a **Flask-based web app** where users can input **chemical 
 ### 1️⃣ **Install Dependencies**
 ```bash
 pip install -r requirements.txt
-2️⃣ Run Flask Application
-bash
- 
- 
+```
+### 2️⃣ **Run Flask Application**
+```bash
 python app.py
-3️⃣ Access Web Interface
+```
+### 3️⃣ **Access Web Interface**
 Open http://127.0.0.1:5000/ in a browser.
 
-🔧 Future Improvements
-🚀 Preprocessing Enhancements:
+🔧 **Future Improvements**
+🚀 **Preprocessing Enhancements:**
+- Noise reduction and non-linear transformations (Box-Cox, Power Transform).
+- Hyperparameter tuning through grid search and cross-validation.
 
-Noise reduction and non-linear transformations (Box-Cox, Power Transform).
-Hyperparameter tuning using grid search and cross-validation.
-⚡ Alternative Algorithms:
+⚡ **Alternative Algorithms:**
+- OPTICS, Graph-Based Clustering, Spectral Clustering.
+- Hybrid approach combining ICA and PCA.
 
-OPTICS, Graph-Based Clustering, Spectral Clustering.
-Hybrid approach combining ICA + PCA.
-📌 Scalability:
+📌 **Scalability:**
+- Implement distributed clustering (e.g., MiniBatch K-Means).
+- Deploy the model as a cloud-based API.
 
-Implementing distributed clustering (e.g., MiniBatch K-Means).
-Deploying the model as a cloud-based API.
-👤 Author
+👤 **Author**
 Marwane KASSA
 
-
-📜 License
+📜 **License**
 This project is open-source and free to use.
 
 🔍 Developed as part of a machine learning research on wine clustering.
-
-yaml
-
----
