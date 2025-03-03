@@ -80,24 +80,19 @@ The project includes a **Flask-based web app** where users can input **chemical 
 
 ## 📂 Project Structure
 
-/ML_Wine_Clustering 
-│── app.py # Flask app for prediction 
-│── kmeans_model.pkl # Pre-trained K-Means model 
-│── scaler.pkl # Standard scaler for feature normalization 
-│── pca.pkl # Pre-trained PCA model for dimensionality reduction 
-│── templates/ 
-│ ├── form.html # Input form for users 
-│ ├── result.html # Displays predicted cluster 
-│── static/ # CSS, JavaScript, images 
-│── Projet_ML.ipynb # Jupyter Notebook with full implementation 
-│── README.md # Project documentation
-
-yaml
-Copier
-Modifier
+/ML_Wine_Clustering  
+│── app.py # Flask app for predictions  
+│── kmeans_model.pkl # Pre-trained K-Means model  
+│── scaler.pkl # Standard scaler for normalization  
+│── pca.pkl # Pre-trained PCA model for dimensionality reduction  
+│── templates/  
+│ ├── form.html # User input form  
+│ ├── result.html # Displays predicted cluster  
+│── static/ # CSS, JavaScript, images  
+│── Projet_ML.ipynb # Jupyter Notebook with full implementation  
+│── README.md # Project documentation  
 
 ---
-
 ## 🚀 Deployment Instructions
 
 ### 1️⃣ **Install Dependencies**
@@ -105,8 +100,8 @@ Modifier
 pip install -r requirements.txt
 2️⃣ Run Flask Application
 bash
-Copier
-Modifier
+ 
+ 
 python app.py
 3️⃣ Access Web Interface
 Open http://127.0.0.1:5000/ in a browser.
@@ -134,7 +129,5 @@ This project is open-source and free to use.
 🔍 Developed as part of a machine learning research on wine clustering.
 
 yaml
-Copier
-Modifier
 
 ---
